@@ -1,0 +1,11 @@
+connect /as sysdba
+Select username, account_status from dba_users;
+alter user hr account unlock;
+alter user hr identified by hr;
+connect HR/HR
+
+select * from JOBS
+INSERT INTO JOBS (JOB_ID,JOB_TITLE,MIN_SALARY,MAX_SALARY) VALUES('SA_B','TEST',2300,40000);
+DELETE FROM JOBS WHERE JOB_ID = 'H_RP'
+
+
